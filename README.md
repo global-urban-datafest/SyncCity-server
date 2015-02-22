@@ -1,9 +1,8 @@
-bluemix hello world in python
+Code Forgery SyncCity server
 ================================================================================
 
-The sample is using [Flask microframework](http://flask.pocoo.org/) and
-intended to test the Python support on [IBM Bluemix](https://bluemix.net/).
-
+Backend implementation of SyncCity Smart Tourism contest entry for smartcities
+hackaton.
 
 
 run locally
@@ -11,7 +10,17 @@ run locally
 
 - [install flask](http://flask.pocoo.org/docs/0.10/installation/)
 - run `python hello.py`
-- visit web site
+- visit web site:
+
+API:
+
+```
+GET /api_user/route?username=john&date=YYYY-mm-dd&time={all_day, morning, afternoon}&city=Barcelona
+GET /api_admin/smart_data
+PUT /api_admin/smart_data?source={real, fake_rainy, fake_sunny}
+GET /api_admin/verbose
+PUT /api_admin/verbose?val={true, false}
+```
 
 
 
