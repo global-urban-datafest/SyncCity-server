@@ -1,0 +1,6 @@
+applications:
+- name:      SyncCity
+  host:      SyncCity
+  memory:    512M
+  command:   python hello.py
+  buildpack: https://github.com/heroku/heroku-buildpack-python.git
